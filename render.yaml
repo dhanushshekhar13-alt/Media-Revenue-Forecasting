@@ -1,0 +1,18 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: media-revenue-forecasting-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.1
+      - key: CORS_ORIGINS
+        # Comma-separated; set to your Vercel URL, e.g. https://media-revenue-forecasting.vercel.app
+        value: "*"
+      - key: MRF_WARMUP
+        value: "1"

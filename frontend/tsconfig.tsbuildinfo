@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/api.ts","./src/format.ts","./src/main.tsx","./src/vite-env.d.ts","./src/components/FanChart.tsx","./src/components/ui.tsx","./src/pages/Benchmark.tsx","./src/pages/Data.tsx","./src/pages/Forecast.tsx","./src/pages/Optimizer.tsx","./src/pages/Overview.tsx"],"version":"5.6.3"}

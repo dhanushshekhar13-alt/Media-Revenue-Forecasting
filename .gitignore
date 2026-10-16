@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/.cache/
+node_modules/
+frontend/dist/
+.env
+.env.local
+.DS_Store

@@ -1,0 +1,690 @@
+{
+  "generated_at": "2026-10-16 05:56 UTC",
+  "environment": {
+    "python": "3.13.16",
+    "machine": "x86_64"
+  },
+  "dataset": {
+    "dataset_id": "synthetic",
+    "rows": 3288,
+    "channels": [
+      "bing",
+      "google",
+      "meta"
+    ],
+    "start": "2023-01-01",
+    "end": "2025-12-31",
+    "totals": {
+      "bing": {
+        "spend": 6788767.3,
+        "revenue": 18923370.06,
+        "roas": 2.7875
+      },
+      "google": {
+        "spend": 25873965.74,
+        "revenue": 73869606.22,
+        "roas": 2.855
+      },
+      "meta": {
+        "spend": 13969894.77,
+        "revenue": 28836850.55,
+        "roas": 2.0642
+      }
+    }
+  },
+  "folds": 12,
+  "horizon": 28,
+  "accuracy": {
+    "roas_quantile": {
+      "metrics": {
+        "bing": {
+          "mape": 0.1202,
+          "wape": 0.1196,
+          "coverage_p10_p90": 0.8036,
+          "scaled_pinball": 0.0378,
+          "interval_width_pct": 0.3988
+        },
+        "google": {
+          "mape": 0.0688,
+          "wape": 0.0693,
+          "coverage_p10_p90": 0.8185,
+          "scaled_pinball": 0.0215,
+          "interval_width_pct": 0.2277
+        },
+        "meta": {
+          "mape": 0.0936,
+          "wape": 0.0921,
+          "coverage_p10_p90": 0.7976,
+          "scaled_pinball": 0.0292,
+          "interval_width_pct": 0.3185
+        },
+        "total": {
+          "mape": 0.06,
+          "wape": 0.0592,
+          "coverage_p10_p90": 0.8185,
+          "scaled_pinball": 0.0183,
+          "interval_width_pct": 0.2028
+        },
+        "channel_avg": {
+          "mape": 0.0942,
+          "wape": 0.0849,
+          "coverage_p10_p90": 0.8065,
+          "scaled_pinball": 0.0266,
+          "interval_width_pct": 0.315
+        }
+      },
+      "folds": [
+        {
+          "origin": "2025-01-30",
+          "total_actual": 3181256.91,
+          "total_p10": 2814981.4796253876,
+          "total_p50": 3099821.045040125,
+          "total_p90": 3450337.463763564
+        },
+        {
+          "origin": "2025-02-27",
+          "total_actual": 2734849.6399999997,
+          "total_p10": 2507341.441945266,
+          "total_p50": 2755061.1964452052,
+          "total_p90": 3068774.095966512
+        },
+        {
+          "origin": "2025-03-27",
+          "total_actual": 2703489.7500000005,
+          "total_p10": 2474642.7690378167,
+          "total_p50": 2724257.4280509455,
+          "total_p90": 3051235.83104501
+        },
+        {
+          "origin": "2025-04-24",
+          "total_actual": 2956344.4299999997,
+          "total_p10": 2646912.050157398,
+          "total_p50": 2895078.14665581,
+          "total_p90": 3231361.03132334
+        },
+        {
+          "origin": "2025-05-22",
+          "total_actual": 3109331.7800000007,
+          "total_p10": 2808859.776557922,
+          "total_p50": 3079216.521964526,
+          "total_p90": 3425371.3913676366
+        },
+        {
+          "origin": "2025-06-19",
+          "total_actual": 3222612.94,
+          "total_p10": 2750453.4759556167,
+          "total_p50": 3020104.2924712207,
+          "total_p90": 3388551.242749017
+        },
+        {
+          "origin": "2025-07-17",
+          "total_actual": 2639508.0,
+          "total_p10": 2422618.179569048,
+          "total_p50": 2651549.331244697,
+          "total_p90": 2951285.462712342
+        },
+        {
+          "origin": "2025-08-14",
+          "total_actual": 2312516.5900000003,
+          "total_p10": 2114334.435765396,
+          "total_p50": 2313048.306994643,
+          "total_p90": 2571265.5557484813
+        },
+        {
+          "origin": "2025-09-11",
+          "total_actual": 2066391.7,
+          "total_p10": 1927479.6584745883,
+          "total_p50": 2102933.1682754215,
+          "total_p90": 2340713.2983981445
+        },
+        {
+          "origin": "2025-10-09",
+          "total_actual": 1891660.56,
+          "total_p10": 1877100.7259995919,
+          "total_p50": 2058029.9457725976,
+          "total_p90": 2275482.951656771
+        },
+        {
+          "origin": "2025-11-06",
+          "total_actual": 2881659.82,
+          "total_p10": 2692693.3801012477,
+          "total_p50": 2949304.5304406215,
+          "total_p90": 3247234.592679106
+        },
+        {
+          "origin": "2025-12-04",
+          "total_actual": 2372392.87,
+          "total_p10": 2211169.7864690474,
+          "total_p50": 2434991.537191977,
+          "total_p90": 2673506.794172856
+        }
+      ],
+      "avg_fit_forecast_seconds": 1.741,
+      "origins": [
+        "2025-01-30",
+        "2025-02-27",
+        "2025-03-27",
+        "2025-04-24",
+        "2025-05-22",
+        "2025-06-19",
+        "2025-07-17",
+        "2025-08-14",
+        "2025-09-11",
+        "2025-10-09",
+        "2025-11-06",
+        "2025-12-04"
+      ],
+      "horizon": 28,
+      "wall_seconds": 20.95,
+      "label": "ROAS-driven quantile (ours)"
+    },
+    "prophet": {
+      "metrics": {
+        "bing": {
+          "mape": 0.1615,
+          "wape": 0.1538,
+          "coverage_p10_p90": 0.7083,
+          "scaled_pinball": 0.049,
+          "interval_width_pct": 0.4126
+        },
+        "google": {
+          "mape": 0.1962,
+          "wape": 0.1671,
+          "coverage_p10_p90": 0.8452,
+          "scaled_pinball": 0.0521,
+          "interval_width_pct": 0.5936
+        },
+        "meta": {
+          "mape": 0.164,
+          "wape": 0.1755,
+          "coverage_p10_p90": 0.7768,
+          "scaled_pinball": 0.0593,
+          "interval_width_pct": 0.5777
+        },
+        "total": {
+          "mape": 0.1274,
+          "wape": 0.1227,
+          "coverage_p10_p90": 0.8452,
+          "scaled_pinball": 0.0394,
+          "interval_width_pct": 0.4275
+        },
+        "channel_avg": {
+          "mape": 0.1739,
+          "wape": 0.1661,
+          "coverage_p10_p90": 0.7768,
+          "scaled_pinball": 0.053,
+          "interval_width_pct": 0.528
+        }
+      },
+      "folds": [
+        {
+          "origin": "2025-01-30",
+          "total_actual": 3181256.91,
+          "total_p10": 2348770.274213956,
+          "total_p50": 2920551.3198720603,
+          "total_p90": 3476461.153379407
+        },
+        {
+          "origin": "2025-02-27",
+          "total_actual": 2734849.6399999997,
+          "total_p10": 2471325.0258274022,
+          "total_p50": 3029431.109945515,
+          "total_p90": 3596986.3072747122
+        },
+        {
+          "origin": "2025-03-27",
+          "total_actual": 2703489.7500000005,
+          "total_p10": 2372070.631316218,
+          "total_p50": 2915633.771678653,
+          "total_p90": 3469554.76569975
+        },
+        {
+          "origin": "2025-04-24",
+          "total_actual": 2956344.4299999997,
+          "total_p10": 2528501.1782027734,
+          "total_p50": 3081771.1642251727,
+          "total_p90": 3646959.5533273825
+        },
+        {
+          "origin": "2025-05-22",
+          "total_actual": 3109331.7800000007,
+          "total_p10": 2646469.978739389,
+          "total_p50": 3179521.5512293396,
+          "total_p90": 3731293.370767969
+        },
+        {
+          "origin": "2025-06-19",
+          "total_actual": 3222612.94,
+          "total_p10": 2870935.197781864,
+          "total_p50": 3405861.8546662536,
+          "total_p90": 3922352.0538796447
+        },
+        {
+          "origin": "2025-07-17",
+          "total_actual": 2639508.0,
+          "total_p10": 2395263.2636451363,
+          "total_p50": 2942545.584673134,
+          "total_p90": 3501365.5090667102
+        },
+        {
+          "origin": "2025-08-14",
+          "total_actual": 2312516.5900000003,
+          "total_p10": 1957211.2780552262,
+          "total_p50": 2517149.771953586,
+          "total_p90": 3056440.502225077
+        },
+        {
+          "origin": "2025-09-11",
+          "total_actual": 2066391.7,
+          "total_p10": 1610524.55913546,
+          "total_p50": 2147645.5272939075,
+          "total_p90": 2683728.1492814515
+        },
+        {
+          "origin": "2025-10-09",
+          "total_actual": 1891660.56,
+          "total_p10": 1629927.3177494563,
+          "total_p50": 2162778.5395410727,
+          "total_p90": 2694714.4105372704
+        },
+        {
+          "origin": "2025-11-06",
+          "total_actual": 2881659.82,
+          "total_p10": 2580095.551815131,
+          "total_p50": 3106166.838685622,
+          "total_p90": 3612275.1526199463
+        },
+        {
+          "origin": "2025-12-04",
+          "total_actual": 2372392.87,
+          "total_p10": 1797258.08265624,
+          "total_p50": 2331478.2537034266,
+          "total_p90": 2876565.754920253
+        }
+      ],
+      "avg_fit_forecast_seconds": 0.873,
+      "origins": [
+        "2025-01-30",
+        "2025-02-27",
+        "2025-03-27",
+        "2025-04-24",
+        "2025-05-22",
+        "2025-06-19",
+        "2025-07-17",
+        "2025-08-14",
+        "2025-09-11",
+        "2025-10-09",
+        "2025-11-06",
+        "2025-12-04"
+      ],
+      "horizon": 28,
+      "wall_seconds": 10.53,
+      "label": "Prophet (univariate)"
+    },
+    "prophet_spend": {
+      "metrics": {
+        "bing": {
+          "mape": 0.1335,
+          "wape": 0.1311,
+          "coverage_p10_p90": 0.6875,
+          "scaled_pinball": 0.0424,
+          "interval_width_pct": 0.3466
+        },
+        "google": {
+          "mape": 0.1265,
+          "wape": 0.1113,
+          "coverage_p10_p90": 0.869,
+          "scaled_pinball": 0.0355,
+          "interval_width_pct": 0.4374
+        },
+        "meta": {
+          "mape": 0.1166,
+          "wape": 0.1197,
+          "coverage_p10_p90": 0.869,
+          "scaled_pinball": 0.0405,
+          "interval_width_pct": 0.5058
+        },
+        "total": {
+          "mape": 0.0909,
+          "wape": 0.0878,
+          "coverage_p10_p90": 0.8661,
+          "scaled_pinball": 0.0291,
+          "interval_width_pct": 0.3408
+        },
+        "channel_avg": {
+          "mape": 0.1256,
+          "wape": 0.1173,
+          "coverage_p10_p90": 0.8085,
+          "scaled_pinball": 0.038,
+          "interval_width_pct": 0.4299
+        }
+      },
+      "folds": [
+        {
+          "origin": "2025-01-30",
+          "total_actual": 3181256.91,
+          "total_p10": 2737307.079611278,
+          "total_p50": 3191722.474792569,
+          "total_p90": 3656725.874603708
+        },
+        {
+          "origin": "2025-02-27",
+          "total_actual": 2734849.6399999997,
+          "total_p10": 2422323.509596032,
+          "total_p50": 2870398.75532351,
+          "total_p90": 3317674.923395193
+        },
+        {
+          "origin": "2025-03-27",
+          "total_actual": 2703489.7500000005,
+          "total_p10": 2414584.814475217,
+          "total_p50": 2861013.4894178263,
+          "total_p90": 3307836.087193403
+        },
+        {
+          "origin": "2025-04-24",
+          "total_actual": 2956344.4299999997,
+          "total_p10": 2536007.8371575,
+          "total_p50": 2969276.627851821,
+          "total_p90": 3406964.861937317
+        },
+        {
+          "origin": "2025-05-22",
+          "total_actual": 3109331.7800000007,
+          "total_p10": 2704427.0757704503,
+          "total_p50": 3146204.7284212983,
+          "total_p90": 3582410.1478112848
+        },
+        {
+          "origin": "2025-06-19",
+          "total_actual": 3222612.94,
+          "total_p10": 2865411.784003891,
+          "total_p50": 3297806.294961336,
+          "total_p90": 3718939.5065755504
+        },
+        {
+          "origin": "2025-07-17",
+          "total_actual": 2639508.0,
+          "total_p10": 2385194.4133960386,
+          "total_p50": 2827240.686160351,
+          "total_p90": 3256450.9689672566
+        },
+        {
+          "origin": "2025-08-14",
+          "total_actual": 2312516.5900000003,
+          "total_p10": 1910240.512622425,
+          "total_p50": 2333055.444644865,
+          "total_p90": 2764364.3101890096
+        },
+        {
+          "origin": "2025-09-11",
+          "total_actual": 2066391.7,
+          "total_p10": 1771778.0142767564,
+          "total_p50": 2200607.697869468,
+          "total_p90": 2622538.5728493514
+        },
+        {
+          "origin": "2025-10-09",
+          "total_actual": 1891660.56,
+          "total_p10": 1640467.3590616737,
+          "total_p50": 2064571.182909298,
+          "total_p90": 2483225.409112463
+        },
+        {
+          "origin": "2025-11-06",
+          "total_actual": 2881659.82,
+          "total_p10": 2492399.86841005,
+          "total_p50": 2909923.1021299143,
+          "total_p90": 3335704.9457100467
+        },
+        {
+          "origin": "2025-12-04",
+          "total_actual": 2372392.87,
+          "total_p10": 2142147.1068714904,
+          "total_p50": 2568064.945144966,
+          "total_p90": 2999892.2756435066
+        }
+      ],
+      "avg_fit_forecast_seconds": 0.848,
+      "origins": [
+        "2025-01-30",
+        "2025-02-27",
+        "2025-03-27",
+        "2025-04-24",
+        "2025-05-22",
+        "2025-06-19",
+        "2025-07-17",
+        "2025-08-14",
+        "2025-09-11",
+        "2025-10-09",
+        "2025-11-06",
+        "2025-12-04"
+      ],
+      "horizon": 28,
+      "wall_seconds": 10.23,
+      "label": "Prophet + spend regressor"
+    },
+    "arima": {
+      "metrics": {
+        "bing": {
+          "mape": 0.1742,
+          "wape": 0.1727,
+          "coverage_p10_p90": 0.8304,
+          "scaled_pinball": 0.0564,
+          "interval_width_pct": 0.6013
+        },
+        "google": {
+          "mape": 0.2323,
+          "wape": 0.1912,
+          "coverage_p10_p90": 0.7262,
+          "scaled_pinball": 0.0686,
+          "interval_width_pct": 0.618
+        },
+        "meta": {
+          "mape": 0.1581,
+          "wape": 0.1736,
+          "coverage_p10_p90": 0.8512,
+          "scaled_pinball": 0.0596,
+          "interval_width_pct": 0.621
+        },
+        "total": {
+          "mape": 0.1597,
+          "wape": 0.1553,
+          "coverage_p10_p90": 0.7946,
+          "scaled_pinball": 0.054,
+          "interval_width_pct": 0.502
+        },
+        "channel_avg": {
+          "mape": 0.1882,
+          "wape": 0.1835,
+          "coverage_p10_p90": 0.8026,
+          "scaled_pinball": 0.0641,
+          "interval_width_pct": 0.6135
+        }
+      },
+      "folds": [
+        {
+          "origin": "2025-01-30",
+          "total_actual": 3181256.91,
+          "total_p10": 2586793.731208185,
+          "total_p50": 3206910.8912367723,
+          "total_p90": 3976931.894019458
+        },
+        {
+          "origin": "2025-02-27",
+          "total_actual": 2734849.6399999997,
+          "total_p10": 2547024.809677188,
+          "total_p50": 3155081.7023183377,
+          "total_p90": 3909432.4462603005
+        },
+        {
+          "origin": "2025-03-27",
+          "total_actual": 2703489.7500000005,
+          "total_p10": 2243393.929794121,
+          "total_p50": 2836114.1153879063,
+          "total_p90": 3591398.905892027
+        },
+        {
+          "origin": "2025-04-24",
+          "total_actual": 2956344.4299999997,
+          "total_p10": 2272152.709752113,
+          "total_p50": 2870006.7189227124,
+          "total_p90": 3631015.0695016063
+        },
+        {
+          "origin": "2025-05-22",
+          "total_actual": 3109331.7800000007,
+          "total_p10": 2358066.1558065126,
+          "total_p50": 2991284.9697544393,
+          "total_p90": 3801522.873184313
+        },
+        {
+          "origin": "2025-06-19",
+          "total_actual": 3222612.94,
+          "total_p10": 2158650.18588438,
+          "total_p50": 2778614.3026286904,
+          "total_p90": 3585531.517506851
+        },
+        {
+          "origin": "2025-07-17",
+          "total_actual": 2639508.0,
+          "total_p10": 2009191.7914347546,
+          "total_p50": 2568864.805225352,
+          "total_p90": 3290789.771589794
+        },
+        {
+          "origin": "2025-08-14",
+          "total_actual": 2312516.5900000003,
+          "total_p10": 1879356.6373781236,
+          "total_p50": 2376271.489457055,
+          "total_p90": 3009027.6124587175
+        },
+        {
+          "origin": "2025-09-11",
+          "total_actual": 2066391.7,
+          "total_p10": 1721562.0160160107,
+          "total_p50": 2178837.8614957375,
+          "total_p90": 2762155.9102999577
+        },
+        {
+          "origin": "2025-10-09",
+          "total_actual": 1891660.56,
+          "total_p10": 1476240.3997853592,
+          "total_p50": 1882164.3944065173,
+          "total_p90": 2404628.6588665345
+        },
+        {
+          "origin": "2025-11-06",
+          "total_actual": 2881659.82,
+          "total_p10": 1563267.134025353,
+          "total_p50": 1957650.0213217232,
+          "total_p90": 2454452.671315613
+        },
+        {
+          "origin": "2025-12-04",
+          "total_actual": 2372392.87,
+          "total_p10": 2863618.6680920594,
+          "total_p50": 3682405.8356549693,
+          "total_p90": 4746955.830184572
+        }
+      ],
+      "avg_fit_forecast_seconds": 2.133,
+      "origins": [
+        "2025-01-30",
+        "2025-02-27",
+        "2025-03-27",
+        "2025-04-24",
+        "2025-05-22",
+        "2025-06-19",
+        "2025-07-17",
+        "2025-08-14",
+        "2025-09-11",
+        "2025-10-09",
+        "2025-11-06",
+        "2025-12-04"
+      ],
+      "horizon": 28,
+      "wall_seconds": 25.64,
+      "label": "SARIMA(1,1,1)(1,0,1)[7]"
+    }
+  },
+  "caching": {
+    "scenario_requests": 25,
+    "uncached_seconds": 41.989,
+    "cached_seconds": 2.788,
+    "warm_seconds": 1.065,
+    "speedup_cold_start": 15.1,
+    "speedup_warm": 39.4,
+    "per_request_ms_uncached": 1679.6,
+    "per_request_ms_warm": 42.6,
+    "backtest_cold_seconds": 6.975,
+    "backtest_warm_seconds": 0.129,
+    "backtest_speedup": 54.1
+  },
+  "optimizer": {
+    "origins": [
+      {
+        "origin": "2025-02-03",
+        "predicted_uplift_pct": 0.416,
+        "true_uplift_pct": -0.428,
+        "allocation_share": {
+          "bing": 0.214,
+          "google": 0.559,
+          "meta": 0.227
+        }
+      },
+      {
+        "origin": "2025-03-31",
+        "predicted_uplift_pct": 1.542,
+        "true_uplift_pct": -0.349,
+        "allocation_share": {
+          "bing": 0.123,
+          "google": 0.708,
+          "meta": 0.169
+        }
+      },
+      {
+        "origin": "2025-05-26",
+        "predicted_uplift_pct": 1.02,
+        "true_uplift_pct": -1.443,
+        "allocation_share": {
+          "bing": 0.166,
+          "google": 0.497,
+          "meta": 0.337
+        }
+      },
+      {
+        "origin": "2025-07-21",
+        "predicted_uplift_pct": 0.787,
+        "true_uplift_pct": 1.22,
+        "allocation_share": {
+          "bing": 0.168,
+          "google": 0.615,
+          "meta": 0.217
+        }
+      },
+      {
+        "origin": "2025-09-15",
+        "predicted_uplift_pct": 3.007,
+        "true_uplift_pct": 4.168,
+        "allocation_share": {
+          "bing": 0.179,
+          "google": 0.625,
+          "meta": 0.196
+        }
+      },
+      {
+        "origin": "2025-11-10",
+        "predicted_uplift_pct": 7.644,
+        "true_uplift_pct": 5.629,
+        "allocation_share": {
+          "bing": 0.298,
+          "google": 0.582,
+          "meta": 0.12
+        }
+      }
+    ],
+    "mean_predicted_uplift_pct": 2.403,
+    "mean_true_uplift_pct": 1.466
+  }
+}
